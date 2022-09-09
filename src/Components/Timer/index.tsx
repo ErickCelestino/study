@@ -1,10 +1,13 @@
 import Button from "../Button";
+import Clock from "./Clock";
+import style from "./Timer.module.scss";
 
-export function Timer(){
+export default function Timer(){
     return(
-        <div>
-            <p>Choose a card and start the timer</p>
-           <div>
+        <div className={style.timer}>
+            <p className={style.title} >Choose a card and start the timer</p>
+           <div className={style.clockWrapper}>
+            <Clock/>
             </div>
             <Button>Start</Button> 
         </div>
